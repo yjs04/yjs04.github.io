@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YJS04 PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="prograss_bar">
+            <div id="prograss"></div>
+            <div id="side_nav"></div>
+        </div>
+        <div id="main_page">
+            <h1 id="logo"><a href="#">PORTFOLIO</a></h1>
+            <h1 id="title" class="add_circle">안녕하세요!<br>백엔드 개발자 연지수입니다.</h1>
+            <p class="bold">
+                버그 없는 코딩을 꿈꾸고 있습니다. <span style="color:#dadada; font-weight: bold;">물론, 불가능하다는걸 알지만요. ;&#41;</span><br>
+                서비스의 안정적인 운영을 위해, 지속 가능한 발전을 목표로 코딩합니다.
+            </p>
+            <p class="contact_me">
+                <span>Phone.</span>duswltn00@naver.com <br>
+                <span>Github.</span><a href="https://github.com/yjs04" target="_blank">https://github.com/yjs04</a> <span></span>
+            </p>
+        </div>
+        <div class="content_wrap">
+            <div class="content_box" title="🏫 학력 & 📚 기술">
+                <div class="content_header">
+                    <h2 class="content_title"><span class="title_icon">🏫</span>학력</h2>
+                    <h5 class="content_subtitle">(최종학력 : 수원정보과학고등학교 졸업)</h5>
+                </div>
+                <div class="content_content">
+                    <p class="add_circle"><span>2024. 03 ~</span><br><span>한국방송통신대학교 - 컴퓨터전자과</span><span style="display: inline-block; padding-left: 1em;">재학중(편입)</span></p>
+                    <p><span>2022. 03 ~ 2023. 09</span><br><span>한국공학대학교 - 컴퓨터전자공학과</span><span style="display: inline-block; padding-left: 1em;">중퇴</span></p>
+                    <p><span>2019. 03 ~ 2022. 01</span><br><span>수원정보과학고등학교 - IT소프트웨어</span><span style="display: inline-block; padding-left: 1em;">졸업</span></p>
+                </div>
+            </div>
+            <div class="content_box" title="🏫 학력 & 📚 기술">
+                <div class="content_header">
+                    <h2 class="content_title"><span class="title_icon">📚</span>기술</h2>
+                </div>
+                <div class="content_content">
+                    <div class="content_item">
+                        <p class="content_subtitle">Backend</p>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Node.js(Express)</li>
+                            <li>MySQL</li>
+                            <li>Python</li>
+                            <li>JAVA, Spring Boot</li>
+                        </ul>
+                    </div>
+                    <div class="content_item">
+                        <p class="content_subtitle">Frontend</p>
+                        <ul>
+                            <li>HTML5, CSS3, Javascript(ES6+)</li>
+                        </ul>
+                    </div>
+                    <div class="content_item">
+                        <p class="content_subtitle">Tools</p>
+                        <ul>
+                            <li>Git, Github</li>
+                            <li>Slack, Notion, Google Drive</li>
+                            <li>Postman</li>
+                            <li>MySQL Workbench, DBeaver</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_box" title="🖥️ 경력">
+            <div class="content_header">
+                <h2 class="content_title"><span class="title_icon">🖥️</span>경력</h2>
+                <h5 class="content_subtitle">(전체 경력 : 2년 7개월)</h5>
+            </div>
+            <div class="content_content">
+                <p>
+                    <span>2022.01 ~ 2024.07</span><br>
+                    <span class="bold">㈜아티웰스 - 개발팀 사원</span><br>
+                    <span class="sub_title">API 개발 및 데이터베이스 유지보수</span>
+                </p>
+                <p class="content_subtitle" style="margin-bottom: 0.5em;">경력기술서</p>
+                <div id="work_view">
+                    <div id="work_list">
+                        <div value="1" class="work_select select"></div>
+                        <div value="2" class="work_select"></div>
+                        <div value="3" class="work_select"></div>
+                    </div>
+                    <div id="content_list">
+                        <div class="content_item border">
+                            <p>
+                                <span>2023. 08 ~ 2024. 07</span><br>
+                                <span class="bold">자체 서비스 플랫폼 &lt;오픈몬&gt;</span><br>
+                                <span class="sub_title">오픈몬 개발 및 운영</span>
+                            </p>
+                            <p><br>개발 언어 : PHP, MySQL</p>
+                            <br>
+                            <p class="bold">[서비스 정의]</p>
+                            <ul>
+                                <li>상권 분석 플랫폼으로 세무전문가와 공인중개사 전용 서비스 플랫폼</li>
+                                <li>상가와 상가가 위치한 상권의 매출을 비롯한 정보와 매출을 구성하는 연령·성별 데이터를 분석해 상가와 상권의 가치를 계산하는 서비스 제공</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[본인 역할]</p>
+                            <ul>
+                                <li>요구사항 분석 및 업무 관련 커뮤니케이션</li>
+                                <li>ERD 기반 데이터베이스 구현</li>
+                                <li>API 개발 및 명세서 작성</li>
+                                <li>디버깅 및 오류 수정 작업</li>
+                                <li>API 및 데이터 유지보수 매뉴얼 작성</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[성과]</p>
+                            <ul>
+                                <li>일정 내 플랫폼 런칭</li>
+                                <li>유지보수 매뉴얼을 활용한 안정적인 서비스 운영</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="content_item border">
+                            <p>
+                                <span>2022. 01 ~ 2024. 07</span><br>
+                                <span class="bold">자체 서비스 플랫폼 &lt;리얼티몬&gt;</span><br>
+                                <span class="sub_title">리얼티몬 운영 및 신규 기능 개발</span>
+                            </p>
+                            <p><br>개발 언어 : PHP, Node.js(Express), MySQL</p>
+                            <br>
+                            <p class="bold">[서비스 정의]</p>
+                            <ul>
+                                <li>공인 중개사 전용 솔루션 플랫폼</li>
+                                <li>전국의 부동산에 대한 공시가격과 실거래가 등의 정보를 제공하고 매물과 고객에 대한 관리 기능 서비스를 제공</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[본인 역할]</p>
+                            <ul>
+                                <li>디버깅 및 오류 수정 작업</li>
+                                <li>코드 리팩토링 작업</li>
+                                <li>DB 암호화 작업</li>
+                                <li>신규 기능 API 개발 및 명세서 작성</li>
+                                <li>데이터 관리 매뉴얼 작성</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[성과]</p>
+                            <ul>
+                                <li>서비스에 일정 내 신규 기능 추가</li>
+                                <li>안정적인 서비스 운영</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="content_item border">
+                            <p>
+                                <span>2022. 01 ~ 2024. 07</span><br>
+                                <span class="bold">자체 서비스 플랫폼 &lt;셀리몬&gt;</span><br>
+                                <span class="sub_title">셀리몬 운영 및 신규 기능 개발</span>
+                            </p>
+                            <p><br>개발 언어 : PHP, Node.js(Express), MySQL</p>
+                            <br>
+                            <p class="bold">[서비스 정의]</p>
+                            <ul>
+                                <li>세금 최적화 솔루션 제공 플랫폼</li>
+                                <li>재산세·종부세나 양도세, 증여세 등의 부동산 세금을 계산하고 절세 솔루션과 자산관리 기능 서비스를 제공</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[본인 역할]</p>
+                            <ul>
+                                <li>디버깅 및 오류 수정 작업</li>
+                                <li>코드 리팩토링 작업</li>
+                                <li>AWS를 사용한 서버 배포 작업</li>
+                                <li>신규 기능 API 개발 및 명세서 작성</li>
+                                <li>유지보수 매뉴얼 작성</li>
+                            </ul>
+                            <br>
+                            <p class="bold">[성과]</p>
+                            <ul>
+                                <li>서비스에 일정 내 신규 기능 추가</li>
+                                <li>안정적인 서비스 운영</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_box" title="🏆 수상">
+            <div class="content_header">
+                <h2 class="content_title"><span class="title_icon">🏆</span>수상</h2>
+            </div>
+            <div class="content_content">
+                <p class="bold">
+                    <span>2021</span><br>
+                    장려상 - 경기도 기능경기대회 웹디자인 및 개발<br>
+                    <span class="sub_title">경기도기능경기위원회</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="content_box" title="📋 자격증">
+            <div class="content_header">
+                <h2 class="content_title"><span class="title_icon">📋</span>자격증</h2>
+            </div>
+            <div class="content_content">
+                <div class="content_credit">
+                    <span>2021.07</span><br>
+                    <p class="bold">웹디자인기능사</p>
+                    <p class="from">한국산업인력공단</p>
+                </div>
+                <div class="content_credit">
+                    <span>2019. 12</span><br>
+                    <p class="bold">정보처리기능사</p>
+                    <p class="from">한국산업인력공단</p>
+                </div>
+                <div class="content_credit">
+                    <span>2019. 07</span><br>
+                    <p class="bold">컴퓨터활용능력 2급</p>
+                    <p class="from">대한상공회의소</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_box" title="✏️ 교육">
+            <div class="content_header">
+                <h2 class="content_title"><span class="title_icon">✏️</span>교육</h2>
+            </div>
+            <div class="content_content">
+                <div class="content_item border wrap">
+                    <div class="content_detail">
+                        <p class="bold">
+                            <span>2024. 11 ~ 2025. 04</span><br>
+                            차세대 AI 예측 Solution 개발(Java, Python)<br>
+                            <span class="sub_title"><a href="http://gvti.or.kr/" target="_blank">(주)글로벌아카데미(구.글로벌직업전문학교)</a></span>
+                        </p>
+                        <br>
+                        <p class="bold">[학습 목표]</p>
+                        <ul>
+                            <li>기업전반의 수익구조 분석 및 예측의 획기적 개선 및 극대화를 위한 HyperAutomation기반 차세대 AI 수익예측 Solution 개발</li>
+                        </ul>
+                        <br>
+                        <p class="bold">[훈련 내용]</p>
+                        <ul>
+                            <li>경영선진 고도화 수익성 이해</li>
+                            <li>응용기술 프로그래밍(JAVA)</li>
+                            <li>데이터베이스 이해 및 활용(SQL)</li>
+                            <li>시스템통합과 인터페이스 구현(JSP/Spring) </li>
+                            <li>데이터 마이닝 및 Intelligence </li>
+                            <li>데이터통계 및 분석(Excel/R) </li>
+                            <li>웹서비스 통합구현(Google Analytics) </li>
+                            <li>HyperAutomation구현(Python, Machine Learning & RPA) </li>
+                            <li>Mini 프로젝트(매출 분개 자동 분석 & 수익성(개선) 자동분석 시스템 개발)</li>
+                            <li>Main 프로젝트(수익 관리 & 예측 차세대 AI Solution 개발)</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="content_pitcure">
+                        <img src="img/education1.jpg" alt="education1 img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_box" title="📂 프로젝트">
+            <div class="content_header">
+                <h2 class="content_title"><span class="title_icon">📂</span>프로젝트</h2>
+            </div>
+            <div class="content_content">
+                <div class="content_item border wrap">
+                    <div class="content_detail">
+                        <p class="bold">
+                            <span>2025.02.03 ~ 2025.04.25</span><br>
+                            기업분석리포트 [Corporate Analysis Report]<br>
+                            <span class="sub_title">(주)글로벌아카데미(구.글로벌직업전문학교) (팀프로젝트)</span>
+                        </p>
+                        <br>
+                        <p class="bold">전자공시시스템(DART : Data Analysis, Retrieval and Transfer System)의 정보를 활용하여 기업의 재무정보를 분석 및 예측하여 누구나 쉽게 파악할 수 있는 보고서를 제공하는 사이트를 제작하는 프로그램입니다.</p>
+                        <br>
+                        <p>
+                            인원 : 4명<br>
+                            개발기간 : 3달
+                        </p>
+                        <br>
+                        <p class="bold">[사용기술]</p>
+                        <p>Front-end</p>
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                        </ul>
+                        <p>Back-end</p>
+                        <ul>
+                            <li>python(3.12.8)</li>
+                            <li>FastAPI</li>
+                            <li>SQLite</li>
+                            <li>tesseract</li>
+                        </ul>
+                        <br>
+                        <p class="bold">[담당역할] (팀장)</p>
+                        <ul>
+                            <li>기획 및 시스템 설계</li>
+                            <li>Back-end 설계 및 구현</li>
+                        </ul>
+                        <br>
+                        <a href="https://github.com/orgs/Corporation-AR-Project" target="_blank">https://github.com/orgs/Corporation-AR-Project</a>
+                    </div>
+                    <div class="content_pitcure">
+                        <img src="img/Project_1_Main.PNG" alt="project_main">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p id="copyright">Copyright 2025. yjs04. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
