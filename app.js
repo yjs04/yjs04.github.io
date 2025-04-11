@@ -55,15 +55,17 @@ class Main {
     }
 
     settingMovePrograss(e) {
-        let scrollHeight = document.body.scrollHeight - window.innerHeight;
-        let prograssBox = document.querySelector("#prograss_bar");
+        if (e.target.id == "prograss" || e.target.id == "prograss_bar") {
+            let scrollHeight = document.body.scrollHeight - window.innerHeight;
+            let prograssBox = document.querySelector("#prograss_bar");
 
-        this.nav_list.forEach(item => {
-            let scroll = (e.offsetY / (prograssBox.offsetHeight / 100)) * (scrollHeight / 100) + 120;
-            if (item.top <= scroll && (item.top + item.height) > scroll) {
-                window.scrollTo({left: 0, top : item.top - 120, behavior : "smooth"});
-            }
-        });
+            this.nav_list.forEach(item => {
+                let scroll = (e.offsetY / (prograssBox.offsetHeight / 100)) * (scrollHeight / 100) + 120;
+                if (item.top <= scroll && (item.top + item.height) > scroll) {
+                    window.scrollTo({left: 0, top : item.top - 120, behavior : "smooth"});
+                }
+            });
+        }
     }
 
     settingPrograssBar(e) {
