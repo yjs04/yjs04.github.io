@@ -345,7 +345,7 @@ footer {
 }
 
 #content_list > .content_item {
-    width: 80%;
+    width: calc(33% - 200px);
     /* padding-top: 30px; */
     padding-right: 50px;
     border: none;
