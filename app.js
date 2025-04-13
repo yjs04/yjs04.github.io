@@ -38,7 +38,8 @@ class Main {
         document.querySelector(".work_select.select").classList.remove("select");
         e.target.classList.add("select");
         let val = e.target.getAttribute("value");
-        document.querySelector("#content_list").style.left = "-" + (val - 1) * 100 +"%";
+        let width = (document.querySelector("#content_list").clientWidth) / 3 - 220;
+        document.querySelector("#content_list").style.left = "-" + (val - 1) * width +"px";
     }
 
     openPopup(e) {
